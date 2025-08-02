@@ -8,7 +8,7 @@ This project is a YouTube downloader bot for Telegram. It allows users to downlo
 3. **Download Dependencies**: Download the required dependencies into the Virtual Environment `venv` using `uv`.
 
 ```shell
-git clone https://github.com/grisha765/downloader_tg_py.git
+git clone https://github.com/ergolyam/downloader_tg_py.git
 cd downloader_tg_py
 python -m venv .venv
 .venv/bin/python -m pip install uv
@@ -28,7 +28,7 @@ python -m venv .venv
 
 - Pull the container:
     ```bash
-    podman pull ghcr.io/grisha765/downloader_tg_py:latest
+    podman pull ghcr.io/ergolyam/downloader_tg_py:latest
     ```
 
 - Deploy using Podman:
@@ -38,7 +38,7 @@ python -m venv .venv
     --name downloader_tg_py \
     -v $HOME/database/:/app/database/:z \
     -e TG_TOKEN="your_telegram_bot_token" \
-    ghcr.io/grisha765/downloader_tg_py:latest
+    ghcr.io/ergolyam/downloader_tg_py:latest
     ```
 
 ## Environment Variables
